@@ -32,6 +32,7 @@ jobs:
       - uses: gap-actions/build-pkg-docs@v2
         with:
           use-latex: true
+          warnings-as-errors: false  # see docs.yml
       - uses: gap-actions/release-pkg@v1
         with:
           dry-run: ${{ inputs.dry-run }}

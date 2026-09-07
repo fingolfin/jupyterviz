@@ -61,7 +61,9 @@ Dependencies := rec(
     [ "json",          "2.0.0"   ],
     [ "GAPDoc",        "1.3"     ]
   ],
-  SuggestedOtherPackages := [ ]
+  SuggestedOtherPackages := [ ],
+  # the test suite exercises the Jupyter integration, which needs a kernel
+  TestPackages := [ [ "JupyterKernel", ">= 1.5" ] ]
 ),
 
 

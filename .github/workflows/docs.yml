@@ -27,6 +27,10 @@ jobs:
       - uses: gap-actions/build-pkg-docs@v2
         with:
           use-latex: 'true'
+          # this manual only settles after a 5th pdflatex pass, one more than
+          # GAPDoc runs, so the build always ends on a "Label(s) may have
+          # changed" warning
+          warnings-as-errors: 'false'
       - name: 'Upload documentation'
         uses: actions/upload-artifact@v7
         with:
