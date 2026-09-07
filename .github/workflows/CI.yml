@@ -34,6 +34,11 @@ jobs:
       - uses: gap-actions/setup-gap@v3
         with:
           gap-version: ${{ matrix.gap-version }}
+      - name: 'Install libzmq'
+        # needed to build ZeroMQInterface, a dependency of JupyterKernel; only
+        # its versions >= 0.18 declare this themselves, and older GAP releases
+        # ship older ones
+        run: sudo apt-get install --no-install-recommends libzmq3-dev
       - uses: gap-actions/build-pkg@v3
       - uses: gap-actions/run-pkg-tests@v4
       - uses: gap-actions/run-pkg-tests@v4
