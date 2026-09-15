@@ -1,10 +1,5 @@
-<!--
-Removing these lines for now because this package is not yet
-integrated into GAP or its build system.
-
-[![Build Status](https://travis-ci.org/gap-packages/jupyterviz.svg?branch=master)](https://travis-ci.org/gap-packages/jupyterviz)
-[![Code Coverage](https://codecov.io/github/gap-packages/jupyterviz/coverage.svg?branch=master&token=)](https://codecov.io/gh/gap-packages/jupyterviz)
--->
+[![CI](https://github.com/nathancarter/jupyterviz/actions/workflows/CI.yml/badge.svg)](https://github.com/nathancarter/jupyterviz/actions/workflows/CI.yml)
+[![Code Coverage](https://codecov.io/github/nathancarter/jupyterviz/coverage.svg?branch=master&token=)](https://codecov.io/gh/nathancarter/jupyterviz)
 
 # The Jupyter Notebook Visualization Package
 
